@@ -10,3 +10,7 @@
 ./setup.sh
 ```
 
+#### test run
+```shell
+./grid-view.sh
+```
