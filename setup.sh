@@ -2,6 +2,7 @@
 sudo apt-get install --fix-missing
 sudo apt-get install
 
+sudo apt-get install git -y
 sudo apt-get install omxplayer -y
 sudo apt-get install screen -y
 sudo apt-get install vim -y
@@ -14,7 +15,7 @@ sudo sed -i '/\bconsoleblank=1 logo.nologo\b/! s/$/ consoleblank=1 logo.nologo/'
 sudo grep -q '^disable_splash=1$' /boot/config.txt || echo 'disable_splash=1' | sudo tee -a /boot/config.txt >/dev/null
 
 # set 256MB memory for gpu
-sudo grep -q '^gpu_mem=256$' /boot/config.txt || echo 'gpu_mem=256' | sudo tee -a /boot/config.txt >/dev/null
+sudo grep -q '^gpu_mem=512$' /boot/config.txt || echo 'gpu_mem=512' | sudo tee -a /boot/config.txt >/dev/null
 sudo grep -q '^disable_overscan=1$' /boot/config.txt || echo 'disable_overscan=1' | sudo tee -a /boot/config.txt >/dev/null
 
 # comment this line out
